@@ -1,60 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>WelCome to React or React.js or ReactJS</h1>
 
     <h1>Model-View-Controller Architecture (MVC Architecture)</h1>
-    <p>Model-View-Controller is an architecture pattern commonly used for developing user interfaces that divides an application into three interconnected parts - Model, View, and COntroller</p>
+    <p>Model-View-Controller is an architecture pattern commonly used for developing user interfaces that divides an
+        application into three interconnected parts - Model, View, and COntroller</p>
 
-    <p>view -- controller  -- Model</p>
-    <span>user -> gives request to controller(1) then request go to data i.e model(2) then renders Data fetch data and goes back to Controller(3) then sends date to View(4) it will be displaed o/p as result</span>
+    <p>view -- controller -- Model</p>
+    <span>user -> gives request to controller(1) then request go to data i.e model(2) then renders Data fetch data and
+        goes back to Controller(3) then sends date to View(4) it will be displaed o/p as result</span>
 
     <h1>What is React ?</h1>
     <p>React (also known as React.js or ReactJS) is a javascript library for building user interfaces</p>
-    <p>React is used in the development of single page web application or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded</p>
-    <p>{;}JS i.e JavaScript + <>HTML = {<>}JSX  i.e. ReactJS </p>
+    <p>React is used in the development of single page web application or mobile applications, as it is optimal for
+        fetching rapidly changing data that needs to be recorded</p>
+    <p>{;}JS i.e JavaScript + <>HTML = {<>}JSX i.e. ReactJS </p>
 
     <h1>Features of React</h1>
     <p>React offers many inbuilt component libraries for faster execution</p>
-    <p>Elements like JSX, Components, Props, State and Virtual DOM, let React to develop application faster with smaller code size, easy deployment, and rich user interface</p>
-    <p>Top corporations such as Facebook, New York Times, Yahoo! Mail, Netflix, Instagram and more use it to solve their user interface relted issues</p>
+    <p>Elements like JSX, Components, Props, State and Virtual DOM, let React to develop application faster with smaller
+        code size, easy deployment, and rich user interface</p>
+    <p>Top corporations such as Facebook, New York Times, Yahoo! Mail, Netflix, Instagram and more use it to solve their
+        user interface relted issues</p>
 
     <h1>How to install React</h1>
     <p>Just to open folder path i.e. c/users/documents/Batch56 & select it & cmd to type & Enter</p>
-    <p>Cmd will open i.e. c:\users\Document\Batch56> npm install create-react-app -g (give enter) here "g" means global i.e it will work every where...Run audit </p>
-    <p>Now we have to create react application in cmd c/users/documents/Batch56> create-react-app project.js (this is file name). It will create folder after this open visual studio & open folder here it automatically {..}package.json file is created already. also in cmd still installation is going on i.e react, react-dom, react-script with cra-template. Now wait till it gets completed. Happy Hacking! </p>
+    <p>Cmd will open i.e. c:\users\Document\Batch56> npm install create-react-app -g (give enter) here "g" means global
+        i.e it will work every where...Run audit </p>
+    <p>Now we have to create react application in cmd c/users/documents/Batch56> npx create-react-app project.js (this
+        is file name & in small letters only). It will create folder after this open visual studio & open folder here it
+        automatically {..}package.json file is created already. also in cmd still installation is going on i.e react,
+        react-dom, react-script with cra-template. Now wait till it gets completed. Happy Hacking! </p>
     <p>now open terminal -> npm run start</p>
+    <p>It will start in some time at localhost:3000 as we know react works in default at port number 3000 only</p>
+
+    <h1>Advantages of React</h1>
+    <p>SPA (Single page application), VDOM(Virtual Dom), HML(Hot module Loading), Boiler plate</p>
+    <p>React Vs Competitors(Vue, Ember, Angular...)</p>
+    <p>SPA (Single page application), HML(Hot module Loading), Boiler plate . However Only React gives extra i.e.
+        VDOM(Virtual Dom)</p>
+
+    <h1>Operations of ReactJS</h1>
+    <p>React->Updates the VDOM -> Diffy's Algorithm -> Virtual & real DOM -> Changes & updates all the elements related
+        -> Request Browser to update the DOM -> Browser update the DOM elements & DOM tree </p>
 
     <h1>What is DOM ?</h1>
-    <p>DOM (Document object model) is a programming interface for SVG documents, XML, HTML . It is a standard which is followed by Browser, javascript engines, XML processors etc.</p>
-    <p>In general DOM is tree structure composed of grouped nodes. It provides an approch way of retrieving, storing and modifying these nodes. </p>
+    <p>DOM (Document object model) is a programming interface for SVG documents, XML, HTML . It is a standard which is
+        followed by Browser, javascript engines, XML processors etc.</p>
+    <p>In general DOM is tree structure composed of grouped nodes. It provides an approch way of retrieving, storing and
+        modifying these nodes. </p>
     <p>The framworks on which by default HTML works is XML Extensible markup Language, DOM -Example useing XML File.</p>
     <Employees>
-    <Employee>
-    <Name>John</Name>
-    </Employee>
-    <Employee>
-    <Name>Bob</Name>
-    </Employee>  
+        <Employee>
+            <Name>John</Name>
+        </Employee>
+        <Employee>
+            <Name>Bob</Name>
+        </Employee>
     </Employees>
-    <p>The above Example depicts a tree structure of DOM. AT the root, there is a node named Employees. This in turn contains two child node of Employee. Each child Employee node contains a node named "Name". The tree structure is Employees-> Employee -> Name.  You can traverse from Parent to child or vice versa. </p>
+    <p>The above Example depicts a tree structure of DOM. AT the root, there is a node named Employees. This in turn
+        contains two child node of Employee. Each child Employee node contains a node named "Name". The tree structure
+        is Employees-> Employee -> Name. You can traverse from Parent to child or vice versa. </p>
 
 
     <h1>How is Virtual Dom Different</h1>
     <p>Retrived <- Dom Element <-Updated <-Created -><- Web browser Performs a operations </p>
-    <p>for e.g. in fb if you give post then your frd gives like,msg to your post this will be seen to you, somthing is happening i.e. virtual & once you refresh page -> everything will be shown i.e likes, msg, all</p>    
-    <p>Virtual Dom-> It creates one tag and tried to populate/update it automatically. So what will happen is your same cades & lines are not gone & no need to repeated storage space is same & timing is same becz of this what we have update it will get retrive over there & respond over there </p>
-    <p>e.g.Facebook-> The profife of your & 2nd frd is completely same to 3rd frd profile. Only data is changed means what new data are field only that is different rest all will be same. SO that the page loads the faster in this case. </p>
+                <p>for e.g. in fb if you give post then your frd gives like,msg to your post this will be seen to you,
+                    somthing is happening i.e. virtual & once you refresh page -> everything will be shown i.e likes,
+                    msg, all</p>
+                <p>Virtual Dom-> It creates one tag and tried to populate/update it automatically. So what will happen
+                    is your same cades & lines are not gone & no need to repeated storage space is same & timing is same
+                    becz of this what we have update it will get retrive over there & respond over there </p>
+                <p>e.g.Facebook-> The profife of your & 2nd frd is completely same to 3rd frd profile. Only data is
+                    changed means what new data are field only that is different rest all will be same. SO that the page
+                    loads the faster in this case. </p>
 
 
-    <h1>JSX</h1>
-    <p></p>
+                <h1>JSX</h1>
+                <p>JSX stands for Javascript XML, which lets you to write the HTML code within the javascript </p>
+                <p>JS + HTML = JSX</p>
 
+                <p>1)JSX is an extension to the javascript language syntax. It is easy to write JSX templetes if you
+                    know the HTML 2)It is type-safe as most of the errors can be caught during compilation. 3)It makes
+                    use of render function to return the single HTML element at a time. 4)React components are usually
+                    writtern using JSX, although they dont need to us components may also be writtern in pure
+                    javascript. </p>
+                <p>JSX syntax</p>
+                <p>const element =
+                <h1>Good morning!</h1>
+    </p>
+    <p>
+        function getName(user){
+        if(user){
+        return
+    <h1>Hello, (user)!</h1>
+    }
+    return <h1>Hello, stranger</h1>
+    }</p>
+
+    <p>App.js</p>
+    <p> Class Component
+        class Car extends React.Component{
+        render(){
+        return(
+    <div>I have a Red Car</div>
+    )
+    }
+    }
+    export default Car
+    </p>
+    <p>Function Component
+        function blueCar(){
+        return(
+    <div>I have a Blue Car</div>
+    )
+    }
+    export default blueCar
+    </p>
+    <p>o/p 1)I have a Red Car 2)I have a Blue Car </p>
+
+    <h1>Principal of React</h1>
+    <p>Component - Minimial Features , Independent code, Reusable codes</p>
+    <p>Types of Component
+        1)Class Component:- Can use the state variables and can work with the React lifecycle 2)Function Component:-
+        Cannot use the state variables & does not work with the React Lifecycle 3)Parent 4)Child 5)Props(properties):-
+        Special variables in react to pass from one component to another 6)State:- Speacial veriables in React to store
+        the data inside the component. *) State Vs Props :- State is internal Component / Props are used to share the
+        data accross the component. State is mutable(values can be changed)/Props are inmutable 7)Lifecycle of React
+        Components :- It has 3 phases 1)Mounting Phases :- Initial mount to the DOM *)Contructor *)Render
+        *)ComponentDidMount-Make the API call to server to bind the onload Data 2)Updating Phases:- User Interaction
+        *)Render 3)Unmounting Phases:- Component gets unmounted from the DOM *)ComponentDidMount-localStorage or
+        sessionStorage
+    </p>
+
+    <h1>new file created :- Class Component i.e. index.js to Parent.js to Child.js</h1>
+    <p>
+        import React from 'react';
+        import ReactDOM from 'react-dom/client';
+        import './index.css';
+        import Parent from './Parent.js';
+        import reportWebVitals from './reportWebVitals';
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(
+        <React.StrictMode>
+            <Parent />
+        </React.StrictMode>
+        );
+    </p>
+    <p>Parent.js
+        import Child from './Child.js';
+        class Parent extends React.Component{
+        render(){
+        return(
+    <div>
+        Parent Component
+        <br />
+        <Child />
+    </div>
+    )
+    }
+    }
+    export default Parent
+    </p>
+    <p>Child.js
+        class Child extends React.Component{
+        render(){
+        return(
+    <div>
+        Child Component
+        <br />
+        <Child />
+    </div>
+    )
+    }
+    }
+    export default Child
+    </p>
+    <p>o/p terminal npm run start :- Parent Component Child Component</p>
+
+
+    <h1>Props</h1>
+    <p>It is abbrivation from properties. Special variable in react to pass data from one component to another part of
+        it and extract it in more efficient way</p>
+    <p>
+    <p>Parent.js
+        import Child from './Child.js';
+        class Parent extends React.Component{
+        render(){
+        return(
+    <div>
+        <Child name="Delhi" />
+        Parent Component
+        <br />
+        <Child name="Pune" />
+    </div>
+    )
+    }
+    }
+    export default Parent
+    </p>
+    <p>
+        Child.js
+        class Child extends React.Component{
+        render(){
+        return(
+    <div>
+        Welcome to {this.props.name}
+        <br />
+        <Child />
+    </div>
+    )
+    }
+    }
+    export default Child
+    </p>
+    <p>o/p Welcome to Delhi..Parent Component Welcome to Pune</p>
+
+
+    <h1>State</h1>
+    <p>Special variable in React to store the data inside a component</p>
+    <p>Parent.js
+        import Child from './Child.js';
+        class Parent extends React.Component{
+        constructor(){
+        super();
+        this.state={
+        name1 : "Bangalore",
+        name2 : "Gujarat"
+        }
+        }
+        render(){
+        return(
+    <div>
+        <Child name={this.state.name1} />
+        Parent Component
+        <br />
+        <Child name={this.state.name2} />
+    </div>
+    )
+    }
+    }
+    export default Parent
+    </p>
+    <p>o/p Welcome to Bangalore..Parent Component Welcome to Gujarat</p>
+
+    <p>tips:- As we know in React Here we have to put javascript & write it in HTML format. SO to use Javascript we have
+        to use in html i.e {} curly bracket as we learn in JXS</p>
+
+
+    <h1>IMP points i.e difference between HTML & React</h1>
+    <p>1)In Javascript we give comment as /*Header*/ & in React we give comment as {/*Header*/}  2)Whatever the values given to it in double commass " " <option value=" ">Delhi</option> 3)Any tag which is into self close i.e.<img, we need to close it /> e.g <img class="headerImg" src="Img/background.png" alt="srcset" /> 4) Very imp - Whatever we have class replace it to className so replace it cntr+F & also keep in mint this will also change the first line of code i.e className, Home extends and others will remain classNameonly </p>
+
+    <h1>Hooks</h1><h1>React Responsive Carousel</h1>
 
 </body>
+
 </html>
